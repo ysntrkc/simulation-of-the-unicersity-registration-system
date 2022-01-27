@@ -49,7 +49,7 @@ class Controller:
             write_json(studentFile, f"Senior/{student.studentID}.json")
 
     def createStudents():
-        with open('python_project/src/simulation.log', 'w') as f:
+        with open('src/simulation.log', 'w') as f:
             f.write('LOG FILE\n')
 
         nameArray = createNames("names.json")

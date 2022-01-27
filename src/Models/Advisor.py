@@ -1,6 +1,6 @@
 from fileinput import filename
 import logging
-filePath = "./python_project/src/simulation.log"
+filePath = "src/simulation.log"
 logging.basicConfig(filename=filePath, level=logging.INFO)
 
 

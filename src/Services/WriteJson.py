@@ -13,25 +13,25 @@ from Models.Advisor import Advisor
 
 
 def write_json(data, filename):
-    with open(f"python_project/Students/{filename}", "w") as f:
+    with open(f"Students/{filename}", "w") as f:
         json.dump(data, f, indent=2)
 
 
 def createDirectories():
-    path = os.path.join(os.path.abspath("./python_project"), "Students")
+    path = os.path.join(os.path.abspath("./"), "Students")
 
     if os.path.exists(path):
         shutil.rmtree(path)
 
     os.mkdir(path)
     os.mkdir(os.path.join(os.path.abspath(
-        "./python_project/Students"), "Freshman"))
+        "./Students"), "Freshman"))
     os.mkdir(os.path.join(os.path.abspath(
-        "./python_project/Students"), "Sophomore"))
+        "./Students"), "Sophomore"))
     os.mkdir(os.path.join(os.path.abspath(
-        "./python_project/Students"), "Junior"))
+        "./Students"), "Junior"))
     os.mkdir(os.path.join(os.path.abspath(
-        "./python_project/Students"), "Senior"))
+        "./Students"), "Senior"))
 
 
 def scheduleFormat(student):
@@ -80,7 +80,7 @@ def scheduleFormat(student):
 
 
 def addStatisticsToLogFile():
-    filePath = "python_project/src/simulation.log"
+    filePath = "src/simulation.log"
 
     with open(filePath, "a") as f:
         f.write("\nSTATISTICS\n")

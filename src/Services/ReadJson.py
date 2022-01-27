@@ -5,7 +5,7 @@ from Models.CourseCode import CourseCode
 
 
 def read_json(file_name):
-    with open(f"python_project/src/JsonFiles/{file_name}", 'r', encoding="UTF-8") as file:
+    with open(f"src/JsonFiles/{file_name}", 'r', encoding="UTF-8") as file:
         data = json.load(file)
     return data
 
